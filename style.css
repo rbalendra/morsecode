@@ -18,7 +18,7 @@ body {
     color: #d36b00;
 }
 
-.morse__container
+form
 {
     display:flex;
     flex-direction: column;
