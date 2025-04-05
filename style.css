@@ -42,6 +42,13 @@ form
     border-radius: 5px;
 }
 
+
+#morse__output{
+    font-size: 2em;
+    color: #7c2d12;
+}
+
+
 .btn {
     color: rgb(124 45 18);
     background-color: rgb(252 211 77);

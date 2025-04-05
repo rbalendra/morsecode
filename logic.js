@@ -1,12 +1,9 @@
 import morseJson from "./morsecode.json" with { type: "json" };
 
-
-
-export const translateToMore = (textInput) => {
+export const translateToMorse = (textInput) => {
     if (typeof textInput !== "string") {
       throw new Error("This input is not a string")
     }
-    
 
     const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
     if (specialChars.test(textInput)) {
@@ -14,23 +11,30 @@ export const translateToMore = (textInput) => {
     }
 
     const upperInput = textInput.toUpperCase().trim();
-   
+    console.log(upperInput)
     const words = upperInput.split(' ') //creates an array of words
+    // console.log(words) // ['HELLO', 'HOW', 'ARE', 'YOU']
+    const validLetters = Object.keys(morseJson) // we retrieve the keys of json file into validletters
     
- 
-    const MorseWords = words.map((word) => {
-        
-        const letters = word.split('')
-        const morseLetters = letters.map((letter) => {
-            return morseJson[letter] || ""
+
+    let morseWords = []
+
+    //we need to loop over each words to make it into individual characters so we can match it with morse code
+    morseWords = words.map((word)=> {
+    const letters = word.split('')
+        // console.log(letters) //  ['H', 'E', 'L', 'L', 'O'] ['H', 'O', 'W']
+
+        //map over the morsecode
+        const morseLetters = letters.map((morseChar) => {
+            if (!validLetters.includes(morseChar)) {
+                throw new Error(`Invalid character entered: ${morseChar}`)
+            }
+            return morseJson[morseChar]
         })
-        return morseLetters.join(" ")
+        //  console.log(morseLetters.join("0")) //.-- .... .... 0 ... .... --.
+        return morseLetters.join(" ") //then you join the individual morse chars to individual words 
+    
     })
-    return MorseWords.join(" | ")
-       
+    return morseWords.join(" | ") //finally it will join the words into sentences with seperation
 }
-
-
-console.log(translateToMore("hello how are you"))
-
 

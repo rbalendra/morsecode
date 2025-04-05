@@ -1,11 +1,9 @@
 
+import {translateToMorse} from "./logic.js"
 
-const btn = document.querySelector('form')
-const input = document.querySelector('#morse__input')
-const output = document.querySelector('#morse__output')
+export const btn = document.querySelector('#morse__btn')
+export const textInput = document.querySelector('#morse__input')
+export const textOutput = document.querySelector('#morse__output')
 
 
 
-btn.addEventListener("click", (e) => {
-    console.log("hello")
-});
