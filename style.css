@@ -6,7 +6,7 @@
 
 body {
     background-color: #fdf7e8;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Urbanist", sans-serif;
     color: #2f2f2f;
 }
 
@@ -15,8 +15,12 @@ body {
     padding:20px;
     font-size: 3rem;
     text-align: center;
+    font-weight: 900;
     color: #d36b00;
+    border-bottom: 5px solid #7c2d12;
+    
 }
+
 
 form
 {
@@ -26,6 +30,10 @@ form
     width: 80%;
     max-width: 800px;
     margin:0 auto;
+}
+
+label{
+    margin-bottom:20px;
 }
 
 #morse__input,
@@ -40,11 +48,12 @@ form
     resize: none;
     outline: none;
     border-radius: 5px;
+  
 }
 
 
 #morse__output{
-    font-size: 2em;
+    font-size: 1.5em;
     color: #7c2d12;
 }
 
@@ -69,4 +78,28 @@ form
 
 .btn:hover {
     box-shadow: 2px 2px 0 0 rgb(124 45 18);;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    color: #d36b00;
+    
+}
+.morse__ref {
+    column-count: 2;
+    column-gap: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #d36b00;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #fff7e0;
+    
+}
+
+.morse__ref li {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
 }

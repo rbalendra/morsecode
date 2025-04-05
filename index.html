@@ -6,23 +6,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Morse Code Translater</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
         <script src="script.js" type="module"></script>
     </head>
 
     <body>
-        <h1 id="morse__title">Morse Code Translator</h1>
+        <h1 id="morse__title">MORSE CODE TRANSLATOR</h1>
 
 
         <div class="morse__container">
             <form>
-                <label for="morse__input">Please enter <b>words only</b> without special characters</label>
-                <textarea id="morse__input" placeholder="submarine suspected try different route"></textarea>
+                <label for="morse__input">Please enter <b>words or morsecode</b> without special characters (use | for
+                    seperating morsecode)</label>
+                <textarea id="morse__input"
+                    placeholder="nuclear launch detected or -. ..- -.-. .-.. . .- .-. | .-.. .- ..- -. -.-. .... | -.. . - . -.-. - . -.."></textarea>
 
                 <button class="btn" id="morse__btn">TRANSLATE</button>
 
                 <label for="morse__output">Translated to <b>either English or Morsecode</b></label>
                 <textarea id="morse__output" placeholder="Translation appears here..." readonly></textarea>
             </form>
+
+
+            <h2>Morse Code Reference</h2>
+            <div class="morse__ref">
+                <ul id="morse__chart"></ul>
+            </div>
+
         </div>
     </body>
 

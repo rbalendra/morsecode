@@ -1,4 +1,4 @@
-import { translateToMorse } from "./logic.js";
+import { translateToMorse, translateToEnglish } from "./logic.js";
 
 describe("translateToMorse function", () => {
     test("should throw an error if input is not a string", () => {
@@ -13,3 +13,21 @@ describe("translateToMorse function", () => {
         expect(translateToMorse("A")).toBe(".-")
     });
 });
+
+
+
+describe("translateToEnglish function", () => {
+    test("should throw an error if input is not a string", () => {
+        expect(() => translateToEnglish(5)).toThrow("Morse input must be string");
+    });
+
+    test("should throw an error if the input has invalid characters", () => {
+        expect(() => translateToEnglish("hello")).toThrow("Morse input has invalid characters");
+    });
+    
+
+    test("should translate '.-' to 'A'", () => {
+        expect(translateToEnglish(".-")).toBe("A");
+    });
+
+})
