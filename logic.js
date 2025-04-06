@@ -35,10 +35,17 @@ export const translateToMorse = (textInput) => {
         })
         //  console.log(morseLetters.join("0")) //.-- .... .... 0 ... .... --.
         return morseLetters.join(" ") //then you join the individual morse chars to individual words 
-    
     })
     return morseWords.join(" | ") //finally it will join the words into sentences with seperation
 }
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
 
 
 //TRANSLATE FROM MORSE TO ENGLISH

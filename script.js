@@ -11,7 +11,7 @@ btn.addEventListener("click", (e) => {
 
         try {
             let translation = ""
-
+            
             if(/^[.\-\s|]*$/.test(inputValue.trim())) { //this checks for input if it has morse characters
             translation = translateToEnglish(inputValue) 
             } else {
@@ -28,9 +28,14 @@ btn.addEventListener("click", (e) => {
     });
 
 
-
-
-
+    
+// const inputField = document.getElementById('morse__input');
+// inputField.addEventListener('input', () => {
+//     const label = document.querySelector('label[for="morse__output"]');
+//     const isMorse = /^[.\-\s|]*$/.test(inputField.value.trim());
+//     label.innerHTML = `will be translated to <b>${
+//         isMorse ? 'English' : 'Morse Code'}</b>`;
+// });
 
 
 
