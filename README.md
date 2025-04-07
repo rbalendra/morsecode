@@ -1,7 +1,7 @@
-![alt text](image-2.png|300)
-![alt text](image.png|300) 
+<img src="image-2.png" width="600">
+<img src="image.png" width="600">
 
-# Morse Code Translator
+# Morse Code Translator [DEMO](https://rbalendra.github.io/morsecode)
 
 ## Outline
 
