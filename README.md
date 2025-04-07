@@ -1,5 +1,5 @@
-![alt text](image-2.png){ width=70% }
-![alt text](image.png) { width=70% }
+![alt text](image-2.png){ width=50% }
+![alt text](image.png) { width=50% }
 
 # Morse Code Translator
 
