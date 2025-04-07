@@ -1,3 +1,6 @@
+![alt text](image-2.png){ width=70% }
+![alt text](image.png){ width=70% }
+
 # Morse Code Translator
 
 ## Outline
@@ -7,14 +10,14 @@ The User Interface will have to look good but should remain simple (additional f
 
 ## MVP
 
--   Create a user interface that allows the user to either input some English text or some Morse Code
--   Create JS functions that would allow the user to:
+- Create a user interface that allows the user to either input some English text or some Morse Code
+- Create JS functions that would allow the user to:
 
-    -   translate their English text into Morse Code
-    -   Morse Code into English text
+  - translate their English text into Morse Code
+  - Morse Code into English text
 
--   Make sure to handle spaces properly (ie. there is 1 space between English words, but one space between Morse Code characters)
--   All non-DOM functions should have unit tests (use Jest)
+- Make sure to handle spaces properly (ie. there is 1 space between English words, but one space between Morse Code characters)
+- All non-DOM functions should have unit tests (use Jest)
 
 ## BONUS
 
@@ -22,8 +25,8 @@ Auto-detect the language - the app should auto-detect whether the input is in Mo
 
 ## Useful Resources:
 
--   [Iterate Object in JavaScript](https://www.javascripttutorial.net/object/iterate-object-in-javascript/)
--   [Looping through objects keys and values in Javascript?](https://flexiple.com/loop-through-object-javascript/)
+- [Iterate Object in JavaScript](https://www.javascripttutorial.net/object/iterate-object-in-javascript/)
+- [Looping through objects keys and values in Javascript?](https://flexiple.com/loop-through-object-javascript/)
 
 ###
 
@@ -58,4 +61,5 @@ Auto-detect the language - the app should auto-detect whether the input is in Mo
 }
 
 ```
-.- -.-. / 
+
+.- -.-. /
